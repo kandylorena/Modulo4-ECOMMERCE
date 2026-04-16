@@ -21,13 +21,11 @@ class Carrito:
             print(f"{p.nombre} - cantidad {c} - subtotal{subtotal}")
         print(f"total de la compra: {total}")
 
-
-
-    def total(self):
-        pass
-
     def vaciar(self, producto):
         self.items.clear()
+
+    def pagar(self):
+        return f"ingrese el pago"
 
 #para probar
 p1 = Producto(1, "computador","tecnologia", 100)

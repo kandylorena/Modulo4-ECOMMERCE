@@ -4,6 +4,9 @@ class Catalogo:
     def __init__(self):
         self.productos = []
 
+    def __str__(self):
+        return f"{self.productos}"
+
 
     def agregar_producto(self,producto):
         self.productos.append(producto)
